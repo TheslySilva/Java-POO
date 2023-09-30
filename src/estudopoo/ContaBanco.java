@@ -15,8 +15,8 @@ public class ContaBanco {
 	//Metodos Especiais
 	
 	public ContaBanco() {
-		this.saldo = 0.0;
-		this.status = false;
+		this.setSaldo = 0.0;
+		this.setStatus= false;
 	}
 	
 	//numConta
@@ -64,18 +64,19 @@ public class ContaBanco {
 		return this.status;
 	}
 	
-	//Metodos
+	//Metodos personalizados
+	
 	public void abrirConta(String t) {
 		
-		setTipo(t);
-		setStatus(true);
+		this.setTipo(t);
+		this.setStatus(true);
 		
 		if(t.equals("CC")){
 			
-			setSaldo(50.0);
+			this.setSaldo(50.0);
 		}else if(tipo.equals("CP")){
 			
-			setSaldo(150.0);
+			this.setSaldo(150.0);
 		}
 	}
 	
@@ -88,7 +89,7 @@ public class ContaBanco {
 			
 			System.out.println("Conta em debito");
 		}else{
-			setStatus(false);
+			this.setStatus(false);
 		}
 		
 	}
@@ -97,7 +98,7 @@ public class ContaBanco {
 		
 		if(status==true){
 			
-		setSaldo(getSaldo()+v);
+		this.setSaldo(getSaldo()+v);
  	}else{
 			System.out.println("Impossivel depositar!");
 		}
