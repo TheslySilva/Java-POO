@@ -29,9 +29,9 @@ public class ContaBanco {
 	}
 	
 	//Tipo
-	public void  setTipo(String t){
+	public void  setTipo(String tipo){
 		
-		this.tipo=t;
+		this.tipo=tipo;
 	}
 	public String getTipo(){
 		
@@ -98,15 +98,15 @@ public class ContaBanco {
 		
 		if(status==true){
 			
-		this.setSaldo(getSaldo()+v);
+		this.setSaldo(this.getSaldo()+v);
  	}else{
 			System.out.println("Impossivel depositar!");
 		}
 	}
 	
 	public void sacar(double s) {
-		if (status=true){
-		if(saldo>0){
+		if (this.status=true){
+		if(this.saldo>0){
 			this.saldo=saldo-s;
 		}else{
 				System.out.println("Saldo insulficiente!");
@@ -120,14 +120,14 @@ public class ContaBanco {
 		
 		double pagar=0;
 		
-		if(getTipo().equals("CC")){
+		if(this.getTipo().equals("CC")){
 			
 			pagar=15;
-		}else if(getTipo().equals("CP")){
+		}else if(this.getTipo().equals("CP")){
 			
 			pagar=20;
 		}
-		if(status== true){
+		if(this.status== true){
 			this.saldo= saldo-pagar;
 		}else{
 			System.out.println("Impossivel pagar!");
