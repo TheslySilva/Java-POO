@@ -4,11 +4,11 @@ public class Caneta{
 
 //Atributos da Classe
 
-String marca;
-String cor;
-float ponta;
-int carga;
-boolean tampada;
+public String marca;
+public String cor;
+public float ponta;
+public int carga;
+private boolean tampada;
 
 //Metedos da Classe
 
