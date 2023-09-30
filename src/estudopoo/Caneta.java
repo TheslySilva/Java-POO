@@ -27,5 +27,4 @@ this.tampada = true;
 public void Destampar(){
 this.tampada = false;
 }
-
 }
