@@ -18,6 +18,7 @@ System.out.println("Marca = " + this.marca);
 System.out.println("Cor = "+ this.cor);
 System.out.println("Ponta = " + this.ponta);
 System.out.println("Carga = "+this.carga);
+System.out.println("Tampada = "+this.tampada);
 
 }
 public void Tampar(){
