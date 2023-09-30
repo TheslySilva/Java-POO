@@ -15,8 +15,8 @@ public class ContaBanco {
 	//Metodos Especiais
 	
 	public ContaBanco() {
-		this.setSaldo = 0.0;
-		this.setStatus= false;
+		this.setSaldo(0.0);
+		this.setStatus(false);
 	}
 	
 	//numConta
