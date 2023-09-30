@@ -114,6 +114,7 @@ public class ContaBanco {
 		if (this.status=true){
 		if(this.saldo>0){
 			this.saldo=saldo-saldo;
+			System.out.println("Saque realizado com sucesso!");
 		}else{
 				System.out.println("Saldo insulficiente!");
 			}
