@@ -20,8 +20,8 @@ public class ContaBanco {
 	}
 	
 	//numConta
-	public void setNumConta(int n) {
-		this.numConta = n;
+	public void setNumConta(int numConta) {
+		this.numConta = numConta;
 	}
 	
 	public int getNumConta() {
@@ -38,8 +38,8 @@ public class ContaBanco {
 		return this.tipo;
 	}
 	//Dono
-	public void setDono(String d) {
-		this.dono = d;
+	public void setDono(String dono) {
+		this.dono = dono;
 	}
 	
 	public String getDono() {
@@ -47,9 +47,9 @@ public class ContaBanco {
 	}
 	
 	//Saldo
-	public void setSaldo(double s){
+	public void setSaldo(double saldo){
 		
-		this.saldo=s;
+		this.saldo=saldo;
 	}
 	public double getSaldo(){
 		
@@ -57,8 +57,8 @@ public class ContaBanco {
 	}
 	
 	//Status
-	public void setStatus(boolean s){
-		this.status=s;
+	public void setStatus(boolean status){
+		this.status=status;
 	}
 	public boolean getStatus(){
 		return this.status;
@@ -66,9 +66,9 @@ public class ContaBanco {
 	
 	//Metodos personalizados
 	
-	public void abrirConta(String t) {
+	public void abrirConta(String tipo) {
 		
-		this.setTipo(t);
+		this.setTipo(tipo);
 		this.setStatus(true);
 		
 		if(t.equals("CC")){
@@ -94,20 +94,20 @@ public class ContaBanco {
 		
 	}
 	
-	public void depositar(double v) {
+	public void depositar(double valor) {
 		
 		if(status==true){
 			
-		this.setSaldo(this.getSaldo()+v);
+		this.setSaldo(this.getSaldo()+valor);
  	}else{
 			System.out.println("Impossivel depositar!");
 		}
 	}
 	
-	public void sacar(double s) {
+	public void sacar(double saldo) {
 		if (this.status=true){
 		if(this.saldo>0){
-			this.saldo=saldo-s;
+			this.saldo=saldo-saldo;
 		}else{
 				System.out.println("Saldo insulficiente!");
 			}
