@@ -14,8 +14,11 @@ public class Main{
 	 	c1.ponta= 0.7;
 	 	c1.carga= 100;
 	 
-	 	//Metodo presente no Objeto
+	 	//Metodos presente no Objeto
 	 	
+	  c1.Tampar();
+	 	
+	 	//Visualizar o Status do metodo
 	 	c1.status();
 	 	
 	}
