@@ -104,6 +104,7 @@ public class ContaBanco {
 		if(status==true){
 			
 		this.setSaldo(this.getSaldo()+valor);
+		System.out.println("Deposito realizado com sucesso!");
  	}else{
 			System.out.println("Impossivel depositar!");
 		}
