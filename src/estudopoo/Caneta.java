@@ -9,10 +9,11 @@ public class Caneta{
 	
 	public void status(){
 		
-		System.out.println(marca);
-		System.out.println(cor);
-		System.out.println(ponta);
-		System.out.println(carga);
+		System.out.println("Marca = " + this.marca);
+		System.out.println("Cor = "+ this.cor);
+		System.out.println("Ponta = " + this.ponta);
+		System.out.println("Carga = "+this.carga);
 		
 	}
+	
 }
