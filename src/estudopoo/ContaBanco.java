@@ -25,7 +25,7 @@ public class ContaBanco {
 	}
 	
 	public int getNumConta() {
-		return numConta;
+		return this.numConta;
 	}
 	
 	//Tipo
@@ -35,7 +35,7 @@ public class ContaBanco {
 	}
 	public String getTipo(){
 		
-		return tipo;
+		return this.tipo;
 	}
 	//Dono
 	public void setDono(String d) {
@@ -43,7 +43,7 @@ public class ContaBanco {
 	}
 	
 	public String getDono() {
-		return dono;
+		return this.dono;
 	}
 	
 	//Saldo
@@ -53,7 +53,7 @@ public class ContaBanco {
 	}
 	public double getSaldo(){
 		
-		return saldo;
+		return this.saldo;
 	}
 	
 	//Status
@@ -61,7 +61,7 @@ public class ContaBanco {
 		this.status=s;
 	}
 	public boolean getStatus(){
-		return status;
+		return this.status;
 	}
 	
 	//Metodos
