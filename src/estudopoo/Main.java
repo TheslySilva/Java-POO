@@ -18,7 +18,7 @@ c1.carga = 100;
 
 c1.Tampar();
 
-//Visualizar o Status do metodo
+//Visualizar o Status do objeto
 
 c1.status();
 
