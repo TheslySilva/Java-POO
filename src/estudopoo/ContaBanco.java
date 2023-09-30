@@ -21,7 +21,7 @@ public class ContaBanco {
 	
 	//numConta
 	public void setNumConta(int n) {
-		numConta = n;
+		this.numConta = n;
 	}
 	
 	public int getNumConta() {
@@ -31,7 +31,7 @@ public class ContaBanco {
 	//Tipo
 	public void  setTipo(String t){
 		
-		tipo=t;
+		this.tipo=t;
 	}
 	public String getTipo(){
 		
@@ -39,7 +39,7 @@ public class ContaBanco {
 	}
 	//Dono
 	public void setDono(String d) {
-		dono = d;
+		this.dono = d;
 	}
 	
 	public String getDono() {
@@ -49,7 +49,7 @@ public class ContaBanco {
 	//Saldo
 	public void setSaldo(double s){
 		
-		saldo=s;
+		this.saldo=s;
 	}
 	public double getSaldo(){
 		
@@ -58,7 +58,7 @@ public class ContaBanco {
 	
 	//Status
 	public void setStatus(boolean s){
-		status=s;
+		this.status=s;
 	}
 	public boolean getStatus(){
 		return status;
@@ -106,7 +106,7 @@ public class ContaBanco {
 	public void sacar(double s) {
 		if (status=true){
 		if(saldo>0){
-			saldo=saldo-s;
+			this.saldo=saldo-s;
 		}else{
 				System.out.println("Saldo insulficiente!");
 			}
@@ -127,7 +127,7 @@ public class ContaBanco {
 			pagar=20;
 		}
 		if(status== true){
-			saldo= saldo-pagar;
+			this.saldo= saldo-pagar;
 		}else{
 			System.out.println("Impossivel pagar!");
 		}
