@@ -66,6 +66,7 @@ public class ContaBanco {
 	
 	//Metodos personalizados
 	
+	//Abrir conta
 	public void abrirConta(String tipo) {
 		
 		this.setTipo(tipo);
@@ -80,6 +81,7 @@ public class ContaBanco {
 		}
 	}
 	
+	//Fechar conta
 	public void fecharConta() {
 		
 		if(saldo>0){
@@ -94,6 +96,7 @@ public class ContaBanco {
 		
 	}
 	
+	//Dositar
 	public void depositar(double valor) {
 		
 		if(status==true){
@@ -103,7 +106,7 @@ public class ContaBanco {
 			System.out.println("Impossivel depositar!");
 		}
 	}
-	
+	//Sacar
 	public void sacar(double saldo) {
 		if (this.status=true){
 		if(this.saldo>0){
@@ -116,6 +119,7 @@ public class ContaBanco {
 		}
 	}
 	
+	//Pagamento Mensal
 	public void pagarMensal() {
 		
 		double pagar=0;
