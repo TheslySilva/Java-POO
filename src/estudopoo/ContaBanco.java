@@ -75,10 +75,12 @@ public class ContaBanco {
 		if(t.equals("CC")){
 			
 			this.setSaldo(50.0);
+
 		}else if(tipo.equals("CP")){
 			
 			this.setSaldo(150.0);
 		}
+			System.out.println("Sucesso!");
 	}
 	
 	//Fechar conta
