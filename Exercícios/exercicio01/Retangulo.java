@@ -12,16 +12,22 @@ public class Retangulo{
 		this.base=base;
 	}
 	//Sair valores
-	public double getArea(){
+	private double getArea(){
 		double area= this.base*this.altura;
 		return area;
 	}
-	public double getPerimetro(){
+	private double getPerimetro(){
 		double perimetro= 2*(this.base+this.altura);
 		return perimetro;
 	}
-	public double getDiagonal(){
+	private double getDiagonal(){
 		double diagobal= Math.sqrt(Math.pow(this.base,2)+Math.pow(this.altura,2));
 		return diagonal;
+	}
+	//Saida completa
+	public String toString(){
+		getArea();
+		getPerimetro();
+		getDiagonal();
 	}
 }
