@@ -1,5 +1,7 @@
 package exercicio01;
 
+import java.text.DecimalFormat;
+
 public class Retangulo {
 	private double altura;
 	private double base;
@@ -11,6 +13,12 @@ public class Retangulo {
 	
 	public void setBase(double base) {
 		this.base = base;
+	}
+	
+	public void createRetangulo(double altura, double base) {
+		System.out.println("\nCriando um retangulo com base " + base + " e altura " + altura);
+		this.setAltura(altura);
+		this.setBase(base);
 	}
 	
 	//Sair valores
@@ -31,8 +39,7 @@ public class Retangulo {
 	
 	//Saida completa
 	public String toString() {
-		return "\nArea = " + getArea() +
-		" \nPerimetro = " + getPerimetro() +
-		" \nDiagonal = " + getDiagonal();
+		DecimalFormat df = new DecimalFormat("#.##");
+		return "\nArea = " +df.format( getArea()) + " \nPerimetro = " + df.format(getPerimetro()) + " \nDiagonal = " + df.format(getDiagonal());
 	}
 }
