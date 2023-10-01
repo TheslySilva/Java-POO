@@ -7,16 +7,16 @@ public class Main {
 	public static void main(String[] args) {
 		
 		Scanner sc= new Scanner(System.in);
-		Retangulo r1= new Retangulo();
+		Retangulo r= new Retangulo();
 		Retangulo r2= new Retangulo();
 		
 		System.out.println("Digite os valores do Retangulo :");
 		System.out.print("\nBase : ");
-		re.setBase(sc.nextDouble());
+		r1.setBase(sc.nextDouble());
 		System.out.print("Altura : ");
-		re.setAltura(sc.nextDouble());
+		r1.setAltura(sc.nextDouble());
 		
-		System.out.println(re.toString());
+		System.out.println(r1.toString());
 		
 		System.out.println("-----------------------");
 		
