@@ -49,7 +49,8 @@ public class Funcionario {
 		"\nTaxa paga : R$ "+getImposto();
 	}
 	public String impostoPago(){
-		return "\nFuncionario : "+getNome()+", R$ "+pagarImposto();
+		return 
+		"\nFuncionario : "+getNome()+", R$ "+pagarImposto();
 	}
 	public String statusAumento(){
 		return "\nUpdated : "+getNome()+", R$ "+this.salario;
