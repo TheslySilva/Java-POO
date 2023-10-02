@@ -29,7 +29,8 @@ public class Main {
 		
 		System.out.println(f1.statusAumento());
 		
-		f1.statusAtual();
+		System.out.print(f1.toString());
+		
 		
 	}
 }
