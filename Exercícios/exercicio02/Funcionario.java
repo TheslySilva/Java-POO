@@ -43,7 +43,8 @@ public class Funcionario {
 	}
 	//Status
 	public String toString(){
-		return "\nNome : "+getNome()+
+		return
+		"\nNome : "+getNome()+
 		"\nSalario atual : R$ "+getSalario()+
 		"\nTaxa paga : R$ "+getImposto();
 	}
