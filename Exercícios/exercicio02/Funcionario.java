@@ -8,10 +8,15 @@ public class Funcionario {
 	
 	//Metodos
 	//Construtor
-	public Funcionario(){
-		this.nome="";
-		this.salario=0;
-		this.imposto=0;
+	public Funcionario(
+	String nome,
+	double salario,
+	double imposto)
+	{
+		
+		this.nome=nome;
+		this.salario=salario;
+		this.imposto=imposto;
 	}
 	//Metodos set e get
 	public void setNome(String nome){
