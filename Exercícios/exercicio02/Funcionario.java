@@ -1,7 +1,5 @@
 package exercicio02;
 
-import java.io.ObjectInputFilter.Status;
-
 public class Funcionario {
 	//Atributos
 	private String nome;
@@ -57,7 +55,7 @@ public class Funcionario {
 		 return aumento;
 	}
 	//Status
-	public void status(){
+	public void statusAtual(){
 		System.out.println("\nNome : "+getNome());
 		System.out.println("Salario atual : R$ "+getSalario());
 		System.out.println("Taxa paga : R$ "+getImposto());
