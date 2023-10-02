@@ -7,36 +7,23 @@ public class Funcionario {
 	private double imposto;
 	
 	//Metodos
+	
 	//Construtor
-	public Funcionario(
-	String nome,
-	double salario,
-	double imposto)
-	{
+	public Funcionario(String nome,double salario,double imposto){
 		
 		this.nome=nome;
 		this.salario=salario;
 		this.imposto=imposto;
 	}
 	//Metodos set e get
-	public void setNome(String nome){
-		this.nome= nome;
-	}
 	private String getNome(){
 		return this.nome;
 	}
 	//
-	public void setSalario(double salario){
-		this.salario=salario;
-	}
 	private double getSalario(){
 		return this.salario;
 	}
 	//
-	public void setImposto(double imposto){
-		
-		this.imposto=imposto;
-	}
 	public double getImposto(){
 		
 		return this.imposto;
