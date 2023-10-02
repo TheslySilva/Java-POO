@@ -42,10 +42,10 @@ public class Funcionario {
 		this.salario=resultado;	
 	}
 	//Status
-	public void statusAtual(){
-		System.out.println("\nNome : "+getNome());
-		System.out.println("Salario atual : R$ "+getSalario());
-		System.out.println("Taxa paga : R$ "+getImposto());
+	public String toString(){
+		return "\nNome : "+getNome()+
+		"\nSalario atual : R$ "+getSalario()+
+		"\nTaxa paga : R$ "+getImposto();
 	}
 	public String impostoPago(){
 		return "\nFuncionario : "+getNome()+", R$ "+pagarImposto();
@@ -53,5 +53,4 @@ public class Funcionario {
 	public String statusAumento(){
 		return "\nUpdated : "+getNome()+", R$ "+this.salario;
 	}
-	
 }
