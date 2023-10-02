@@ -8,23 +8,24 @@ public class Main {
 	public static void main(String[] args) {
 		
 		Scanner sc= new Scanner(System.in);
-		Funcionario f1= new Funcionario();
 		
 		System.out.println("Digite os dados do Funcionario:");
 		
 		System.out.print("Nome : ");
-		f1.setNome(sc.nextLine());
+		String nome=sc.nextLine();
 		
 		System.out.print("Salario bruto : ");
-		f1.setSalario(sc.nextInt());
+		double salario=sc.nextInt();
 		
 		System.out.print("Imposto : ");
-		f1.setImposto(sc.nextInt());
+		double imposto=sc.nextInt();
 		
+		Funcionario f1= new Funcionario(nome,salario,imposto);
 		System.out.println(f1.impostoPago());
 		
 		System.out.print("\nPorcentagem de seu aumento :");
-		f1.setAumento(sc.nextDouble());
+		f1. gerarAumento(sc.nextDouble());
+		
 		
 		System.out.println(f1.statusAumento());
 		
