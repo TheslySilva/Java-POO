@@ -5,10 +5,14 @@ public class Funcionario {
 	private String nome;
 	private double salario;
 	private double imposto;
-	private double aumento;
 	
 	//Metodos
-	
+	//Construtor
+	public Funcionario(){
+		this.nome="";
+		this.salario=0;
+		this.imposto=0;
+	}
 	//Metodos set e get
 	public void setNome(String nome){
 		this.nome= nome;
@@ -22,13 +26,6 @@ public class Funcionario {
 	}
 	private double getSalario(){
 		return this.salario;
-	}
-	//
-	public void setAumento(double aumento){
-		this.aumento=aumento;
-	}
-	private double getAumento(){
-		return this.aumento;
 	}
 	//
 	public void setImposto(double imposto){
@@ -45,14 +42,12 @@ public class Funcionario {
 		double imposto= getSalario()-getImposto();
 		return imposto;
 	}
-	public double  gerarAumento(){
+	public void gerarAumento(double aumento){
 		
-		double porcentagem=(getSalario()* getAumento())/100;
-		double aumento=porcentagem+pagarImposto();
+		double porcentagem=(getSalario()* aumento)/100;
+		double resultado=porcentagem+pagarImposto();
 		
-		this.salario=aumento;
-		
-		 return aumento;
+		this.salario=resultado;	
 	}
 	//Status
 	public void statusAtual(){
@@ -64,7 +59,7 @@ public class Funcionario {
 		return "\nFuncionario : "+getNome()+", R$ "+pagarImposto();
 	}
 	public String statusAumento(){
-		return "\nUpdated : "+getNome()+", R$ "+gerarAumento();
+		return "\nUpdated : "+getNome()+", R$ "+this.salario;
 	}
 	
 }
