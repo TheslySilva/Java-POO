@@ -31,6 +31,5 @@ public class Main {
 		
 		f1.statusAtual();
 		
-		
 	}
 }
