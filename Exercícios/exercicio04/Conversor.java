@@ -1,4 +1,4 @@
-package util;
+package exercicio04;
 
 public class Conversor {
 	
