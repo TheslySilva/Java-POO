@@ -1,4 +1,4 @@
-package principal;
+package exercicio04;
 
 import java.util.Scanner;
 import util.Conversor;
