@@ -1,4 +1,4 @@
-package main;
+package exercicio05;
 
 public class Banco {
 	private int conta;
