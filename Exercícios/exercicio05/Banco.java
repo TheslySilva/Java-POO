@@ -37,11 +37,17 @@ public class Banco {
 	
 	//Deposito e Saque
 	public void deposito(double saldo) {
-		this.saldo = saldo;
+		this.saldo = this.saldo+saldo;
+		System.out.println("\nDADOS DA CONTA ATUALIZADOS!\n" + toString());
 	}
 	
-	public void  saque(double saldo) {
-		this.saldo=this.saldo-saldo;
-		this.saldo= this.saldo-5;
+	public void saque(double saldo) {
+		this.saldo = this.saldo - saldo;
+		this.saldo = this.saldo - 5;
+		System.out.println("\nDADOS DA CONTA ATUALIZADOS!\n" + toString());
+	}
+	
+	public String toString() {
+		return "\nConta : " + this.conta + "\nProprietario : " + this.nome + "\nSaldo : " + this.saldo;
 	}
 }
