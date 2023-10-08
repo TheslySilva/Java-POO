@@ -5,37 +5,41 @@ import java.util.Scanner;
 public class Main {
 	
 	public static void main(String[] args) {
-		Scanner sc= new Scanner(System.in);
-		
+		Scanner sc = new Scanner(System.in);
 		int conta;
 		String nome;
 		double saldo;
 		char verificacao;
+		Banco b1;
 		
-		System.out.println("Digite os dados");
+		System.out.println("DIGITE OS DADOS : \n");
+		
 		System.out.print("Conta : ");
-		conta= sc.nextInt();
+		conta = sc.nextInt();
+		
+		nome=sc.nextLine();
+		
 		System.out.print("Nome : ");
-		nome= sc.nextLine();
+		nome = sc.nextLine();
 		
-		System.out.println("Vai ter deposito inicial? [S | N] : ");
-		verificacao=sc.next();
+		System.out.print("Vai ter deposito inicial? [S | N] : ");
+		verificacao = sc.next().charAt(0);
 		
-		if (verificacao.equals('S')) 
+		if (verificacao == 'S') {
+			System.out.print("Entre com o deposito inicial : ");
+			saldo = sc.nextDouble();
+			 b1 = new Banco(conta, nome, saldo);
+		} else {
+			b1 = new Banco(conta, nome);
+		}
 		
-		System.out.print("Entre com o deposito inicial : ");
-		saldo= sc.nextDouble();
+		System.out.println("\nDados da conta :\n" + b1.toString());
 		
-		Banco b1= new Banco(conta,nome,saldo);
+		System.out.print("\nEntre com o valor do deposito : ");
+		b1.deposito(sc.nextDouble());
 		
-	}else{
+		System.out.print("\nValor a ser sacado : ");
+		b1.saque(sc.nextDouble());
 		
-	Banco b1= new Banco(conta,nome,)
-	
 	}
-	System.out.println("Dados da conta :\n"+b1.toString());
-	
-	System.out.print("Entre com o valor do deposito : ");
-	b1.deposito(sc.nextDouble);
-	
 }
