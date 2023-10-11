@@ -28,6 +28,8 @@ public class Funcionario {
 	private setSalario(double salario){
 		this.salario=salario;
 	}
+	//
+	
 	//toString
 	public String toString(){
 		return "Id = "+this.id+", Nome = "+ this.nome+" , Salario = "+ this.Salario;
