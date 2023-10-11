@@ -29,7 +29,10 @@ public class Funcionario {
 		this.salario=salario;
 	}
 	//
-	
+	public void aumento(double aumento){
+		double resultado= getSalario*aumento/100.0;
+		setSalario(resultado)
+	}
 	//toString
 	public String toString(){
 		return "Id = "+this.id+", Nome = "+ this.nome+" , Salario = "+ this.Salario;
