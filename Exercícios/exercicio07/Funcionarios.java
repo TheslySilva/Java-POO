@@ -13,5 +13,16 @@ public class Funcionario {
 		this.salario=salario;
 	}
 	//Get e Set
-	
+	//
+	public int getId(){
+		return this.id;
+	}
+	//
+	public String getNome(){
+		return this.nome;
+	}
+	//
+	public double getSalario(){
+		return this.salario;
+	}
 }
