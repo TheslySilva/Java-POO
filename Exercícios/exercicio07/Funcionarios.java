@@ -30,7 +30,7 @@ public class Funcionario {
 	}
 	//
 	public void aumento(double aumento){
-		double resultado= getSalario*aumento/100.0;
+		double resultado= (getSalario*aumento)/100.0;
 		setSalario(resultado)
 	}
 	//toString
