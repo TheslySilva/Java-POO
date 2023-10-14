@@ -31,7 +31,7 @@ public class Main {
 		System.out.println("Entre com os dados do estoque :");
 		System.out.print("Estado : ");
 		StatusDoProduto status = StatusDoProduto.valueOf(sc.next());
-		//Adicionando items ao estoque
+		//Adicionando items ao pedido
 		System.out.print("Quantos itens para este pedido?");
 		int n= sc.nextInt():
 		
