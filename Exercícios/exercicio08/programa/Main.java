@@ -51,10 +51,12 @@ public class Main {
 			System.out.print("Preço do produto : ");
 			double preco= sc.nextDouble();
 			
+			Produto produto= new Produto(nome,preco,quantidade)
+			
 			System.out.print("Quantidade : ");
 			int quantidade= sc.nextInt();
 			
-			Produto produto= new Produto(nome,preco,quantidade)
+			ItemPedido itemPedido= new itemPedido(quantidade,preco, produto);
 			
 		}
 	}
