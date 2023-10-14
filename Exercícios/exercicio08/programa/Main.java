@@ -12,8 +12,24 @@ public class Main {
 		
 		Scanner sc= new Scanner(System.in);
 		SimpleDateFormat formatarData= new SimpleDateFormat();
+		//Dados do cliente
+		System.out.println("Entre com os dados do cliente : ");
+		System.out.print("\nNome : ");
+		String nome= sc.nextLine();
 		//
+		sc.nextLine();
+		//
+		System.out.print("Email : ");
+		String email= sc.nextLine();
+		//
+		System.out.print("Data de nascimento (DD/MM/YYYY) : ");
+		Date aniversario= formatarData.parse(sc.next());
 		
+		Cliente cliente = new cliente(nome,email,aniversario);
+		
+		//Dados do estoque
+		System.out.println("Entre com os dados do estoque :");
+		System.out.print("Estado : ");
 		
 	}
 }
