@@ -42,7 +42,6 @@ public class Estoque {
 	}
 	
 	//
-	@Override
 	public String toString() {
 		
 		StringBuilder str = new StringBuilder();
