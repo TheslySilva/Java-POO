@@ -39,19 +39,19 @@ public class Main {
 
 		//Dados do estoque
 		
-		System.out.println("Entre com os dados do estoque :");
-		System.out.print("Estado : ");
+		System.out.println("\nEntre com os dados do estoque :");
+		System.out.print("\nEstado : ");
 		StatusDoPedido status = StatusDoPedido.valueOf(sc.next());
 		
 		Estoque estoque = new Estoque(new Date(), status,cliente);
 		//Adicionando items ao pedido
 		
-		System.out.print("Quantos itens para este pedido?");
+		System.out.print("Quantos itens para este pedido? ");
 		int n= sc.nextInt();
 		
 		for(int i = 0; i<n; i++){
 			
-			System.out.println("Entre com os dados do #"+(i+1)+" produto :");
+			System.out.println("\nEntre com os dados do #"+(i+1)+" produto :");
 			
 			System.out.print("\nNome do produto : ");
 			sc.nextLine();//limpar quebra de linha
@@ -67,12 +67,12 @@ public class Main {
 			
 			
 			
-			ItemPedido itemPedido= new ItemPedido(quantidade,preco);
+			ItemPedido itemPedido= new ItemPedido(quantidade,preco,produto);
 			
 			estoque.addItem(itemPedido);
 			
 		}
-		System.out.println("\nResumo do pedido:");
+		System.out.println("\nResumo do pedido:\n");
 		System.out.print(estoque);
 	}
 }
