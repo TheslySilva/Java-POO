@@ -1,25 +1,32 @@
 package exercicio08.programa;
 
-import java.util.Scanner;
 import java.text.SimpleDateFormat;
+import java.util.Scanner;
+import  java.util.Date;
 import java.util.Locale;
+import java.text.ParseException;
+
+import exercicio08.enums.StatusDoPedido;
+import exercicio08.entities.Estoque;
+import exercicio08.entities.Cliente;
+import exercicio08.entities.Produtos;
+import exercicio08.entities.ItemPedido;
 
 public class Main {
 	
-	public static void main(String[] args) {
+	public static void main(String[] args) throws ParseException{
 		
 		Locale.setDefault(Locale.US);
 		
 		Scanner sc= new Scanner(System.in);
-		SimpleDateFormat formatarData= new SimpleDateFormat();
+		SimpleDateFormat formatarData= new SimpleDateFormat("dd/MM/yyyy");
 		
 		//Dados do cliente
 		
 		System.out.println("Entre com os dados do cliente : ");
+		
 		System.out.print("\nNome : ");
 		String nome= sc.nextLine();
-		//
-		sc.nextLine();//limpar quebra de linha
 		//
 		System.out.print("Email : ");
 		String email= sc.nextLine();
@@ -27,20 +34,20 @@ public class Main {
 		System.out.print("Data de nascimento (DD/MM/YYYY) : ");
 		Date aniversario= formatarData.parse(sc.next());
 		
-		Cliente cliente = new cliente(nome,email,aniversario);
+		Cliente cliente = new Cliente(nome,email,aniversario);
 		
 
 		//Dados do estoque
 		
 		System.out.println("Entre com os dados do estoque :");
 		System.out.print("Estado : ");
-		StatusDoProduto status = StatusDoProduto.valueOf(sc.next());
+		StatusDoPedido status = StatusDoPedido.valueOf(sc.next());
 		
-				Estoque estoque(new Date,status,cliente,)
+		Estoque estoque = new Estoque(new Date(), status,cliente);
 		//Adicionando items ao pedido
 		
 		System.out.print("Quantos itens para este pedido?");
-		int n= sc.nextInt():
+		int n= sc.nextInt();
 		
 		for(int i = 0; i<n; i++){
 			
@@ -48,22 +55,24 @@ public class Main {
 			
 			System.out.print("\nNome do produto : ");
 			sc.nextLine();//limpar quebra de linha
-			String nome = sc.nextLine();
+			String nomeProduto = sc.nextLine();
 			
 			System.out.print("Preço do produto : ");
 			double preco= sc.nextDouble();
 			
-			Produto produto= new Produto(nome,preco,quantidade)
+			Produtos produto= new Produtos(nomeProduto,preco);
 			
 			System.out.print("Quantidade : ");
 			int quantidade= sc.nextInt();
 			
-			ItemPedido itemPedido= new itemPedido(quantidade,preco, produto);
+			
+			
+			ItemPedido itemPedido= new ItemPedido(quantidade,preco);
 			
 			estoque.addItem(itemPedido);
 			
 		}
 		System.out.println("\nResumo do pedido:");
-		System.out.println(estoque);
+		System.out.print(estoque);
 	}
 }
