@@ -30,6 +30,6 @@ public class Main {
 		//Dados do estoque
 		System.out.println("Entre com os dados do estoque :");
 		System.out.print("Estado : ");
-		
+		StatusDoProduto status = StatusDoProduto.valueOf(sc.next());
 	}
 }
