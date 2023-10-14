@@ -32,6 +32,11 @@ public class Main {
 		System.out.print("Estado : ");
 		StatusDoProduto status = StatusDoProduto.valueOf(sc.next());
 		//Adicionando items ao estoque
+		System.out.print("Quantos itens para este pedido?");
+		int n= sc.nextInt():
 		
+		for(int i = 0; i<n; i++){
+			
+		}
 	}
 }
