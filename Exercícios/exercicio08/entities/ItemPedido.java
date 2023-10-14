@@ -9,7 +9,7 @@ public class ItemPedido {
 	//
 	public Produtos produtos;
 	//
-	public void ItemPedido(int quantidade,double preco){
+	public  ItemPedido(int quantidade,double preco){
 		
 		this.quantidade= quantidade;
 		this.preco=preco;
