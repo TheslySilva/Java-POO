@@ -9,7 +9,7 @@ public class ItemPedido {
 	//
 	public Produtos produtos;
 	//
-	public  ItemPedido(int quantidade,double preco){
+	public  ItemPedido(int quantidade,double preco, Produtos produtos){
 		
 		this.quantidade= quantidade;
 		this.preco=preco;
@@ -23,9 +23,9 @@ public class ItemPedido {
 	//
 	public String toString(){
 		
-		return produtos.getNome()+" , $ "
-		+String.format("%.2f%n",preco)
-		+" , Quantidade : "+ quantidade
-		+", Valor total :  $"+String.format("%.2f%n",somaTotal()) ;
+		return "\n"+produtos.getNome()+", $"
+		+String.format("%.2f",preco)
+		+" ,Quantidade: "+ quantidade
+		+",Valor total: $"+String.format("%.2f%n",somaTotal()) ;
 	}
 }
