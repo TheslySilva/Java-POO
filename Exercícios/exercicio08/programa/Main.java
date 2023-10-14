@@ -53,6 +53,9 @@ public class Main {
 			
 			System.out.print("Quantidade : ");
 			int quantidade= sc.nextInt();
+			
+			Produto produto= new Produto(nome,preco,quantidade)
+			
 		}
 	}
 }
