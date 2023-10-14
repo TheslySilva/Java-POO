@@ -29,12 +29,14 @@ public class Main {
 		
 		Cliente cliente = new cliente(nome,email,aniversario);
 		
+
 		//Dados do estoque
 		
 		System.out.println("Entre com os dados do estoque :");
 		System.out.print("Estado : ");
 		StatusDoProduto status = StatusDoProduto.valueOf(sc.next());
 		
+				Estoque estoque(new Date,status,cliente,)
 		//Adicionando items ao pedido
 		
 		System.out.print("Quantos itens para este pedido?");
@@ -58,6 +60,10 @@ public class Main {
 			
 			ItemPedido itemPedido= new itemPedido(quantidade,preco, produto);
 			
+			estoque.addItem(itemPedido);
+			
 		}
+		System.out.println("\nResumo do pedido:");
+		System.out.println(estoque);
 	}
 }
