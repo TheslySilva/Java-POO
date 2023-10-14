@@ -13,7 +13,7 @@ public class Cliente {
 	private String email;
 	private Date aniversario;
 	//
-	public void Cliente(String nome, String email, Date aniversario) {
+	public  Cliente(String nome, String email, Date aniversario) {
 		this.nome = nome;
 		this.email = email;
 		this.aniversario = aniversario;
@@ -36,7 +36,7 @@ public class Cliente {
 	//
 	public String toString(){
 		
-		return "nome "+this.nome+", ("
-		+formatarData.format(this.aniversario)+") - "+this.email;
+		return "nome "+nome+", ("
+		+formatarData.format(aniversario)+") - "+email;
 	}
 }
