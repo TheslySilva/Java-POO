@@ -52,12 +52,12 @@ public class Estoque {
 		str.append(estado + "\n");
 		str.append("Cliente : ");
 		str.append(cliente + "\n");
-		str.append("Itens pedido : ");
+		str.append("\nItens pedido:\n");
 		
 		for (ItemPedido items : listaDeItems) {
-			str.append(items + "\n");
+			str.append(items );
 		}
-		str.append("Valor total : ");
+		str.append("\nValor total :");
 		str.append(String.format("%.2f%n", total()));
 		
 		return str.toString();
