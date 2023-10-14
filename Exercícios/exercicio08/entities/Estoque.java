@@ -17,7 +17,7 @@ public class Estoque {
 	private List<ItemPedido> listaDeItems = new ArrayList<ItemPedido>();
 	
 	//Construtor
-	public void Estoque(Date momento, StatusDoPedido estado, Cliente cliente) {
+	public Estoque(Date momento, StatusDoPedido estado, Cliente cliente) {
 		this.momento = momento;
 		this.estado = estado;
 		this.cliente = cliente;
@@ -42,6 +42,7 @@ public class Estoque {
 	}
 	
 	//
+	@Override
 	public String toString() {
 		
 		StringBuilder str = new StringBuilder();
