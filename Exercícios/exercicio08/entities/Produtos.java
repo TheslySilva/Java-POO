@@ -1,3 +1,4 @@
+
 package exercicio08.entities;
 
 public class Produtos {
@@ -6,7 +7,7 @@ public class Produtos {
 	private double preco;
 	
 	//
-	public void Produtos(String nome, double preco) {
+	public Produtos(String nome, double preco) {
 		this.nome = nome;
 		this.preco = preco;
 	}
@@ -20,4 +21,6 @@ public class Produtos {
 	public double getPreco() {
 		return this.preco;
 	}
+	//
+	
 }
