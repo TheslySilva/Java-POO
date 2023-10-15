@@ -8,25 +8,26 @@ public class PessoaJuridica extends Pessoa {
 		super(nome,rendaAnual);
 		this.funcionarios=funcionarios;
 	}
-	
-	
-	@Override
-	public Double imposto(){
-		
+	//
+	private double impostoGerado(){
 		double resultado;
-		double porcentagem;
 		
 		if (funcionarios>10){
 			
-			porcentagem=getRendaAnual()*14.00/100.00;
-			resultado= getRendaAnual()+porcentagem;
+			resultado=getRendaAnual()*14.00/100.00;
 			
 		}else{
 			
-			porcentagem = getRendaAnual()*16.00/100.00;
-			resultado=getRendaAnual()+porcentagem;
+			resultado = getRendaAnual()*16.00/100.00;
+			
 		}
 		
 		return resultado;
+	}
+	
+	@Override
+	public String imposto(){
+		
+		return getNome()+": $ "+String.format("%.2f",impostoGerado());
 	}
 }
