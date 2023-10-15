@@ -2,13 +2,13 @@ package exercicio09.programa;
 
 import exercicio09.entities.ProdutoImportado;
 import exercicio09.entities.ProdutoUsado;
-import java.text.SimpleDateFormat;
 import exercicio09.entities.Produto;
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
+import java.util.Scanner;
 import java.util.Date;
 import java.util.List;
 
-import java.util.Scanner;
 
 public class Main {
 	
