@@ -20,7 +20,7 @@ public class Main {
 		
 		for (int i = 0; i < n; i++) {
 			
-			System.out.println("\nDados do #" + (i + 1));
+			System.out.println("\nDados do #" + (i + 1)+" contribuente:");
 			
 			System.out.print("\nIndividual ou Empresa (I | E)? : ");
 			char estado = sc.next().charAt(0);
