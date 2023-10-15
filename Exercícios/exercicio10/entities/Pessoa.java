@@ -22,8 +22,9 @@ public abstract class Pessoa {
 		return rendaAnual;
 	}
 	//
-	//Metedo Abstrato
+	//Metedos Abstrato
 	//
-	public abstract  String imposto();
+	public abstract  String impostoPago();
+	public abstract Double taxaPaga();
 	
 }
