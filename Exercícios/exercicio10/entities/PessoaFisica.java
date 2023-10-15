@@ -19,7 +19,12 @@ public class PessoaFisica extends Pessoa {
 		return this.gastosComSaude;
 	}
 	//
-	private double impostoGerado(){
+	//
+	@Override
+	public String impostoPago(){
+		return getNome()+": $ "+String.format("%.2f",taxaPaga());
+	}
+	public Double taxaPaga(){
 		double resultado;
 		
 		if (getRendaAnual()>20000){
@@ -32,10 +37,5 @@ public class PessoaFisica extends Pessoa {
 		}
 		
 		return resultado;
-	}
-	
-	@Override
-	public String imposto(){
-		return getNome()+": $ "+String.format("%.2f",impostoGerado());
 	}
 }
