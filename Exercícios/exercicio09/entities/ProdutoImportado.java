@@ -33,5 +33,4 @@ public class ProdutoImportado extends Produto {
 		
 		return sb.toString();
 	}
-	
 }
