@@ -54,7 +54,7 @@ public class Main {
 				
 			}
 		}
-		System.out.println("------------------------------------------------------------------------------");
+		System.out.println("\n---------------------------------------------------------------------------------");
 		System.out.println("\nTabela de preços:\n");
 		
 		for (Produto produtos: lista){
