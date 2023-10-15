@@ -24,6 +24,6 @@ public abstract class Pessoa {
 	//
 	//Metedo Abstrato
 	//
-	public abstract  Double imposto();
+	public abstract  String imposto();
 	
 }
