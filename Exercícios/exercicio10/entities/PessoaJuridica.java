@@ -2,14 +2,23 @@ package entities;
 
 public class PessoaJuridica extends Pessoa {
 	private Integer funcionarios;
-	
-	
+	//
+	//Construtor
+	//
 	public PessoaJuridica(String nome,Double rendaAnual,int funcionarios){
 		super(nome,rendaAnual);
 		this.funcionarios=funcionarios;
 	}
 	//
-	private double impostoGerado(){
+	//
+	@Override
+	public String impostoPago(){
+		
+		return getNome()+": $ "+String.format("%.2f",taxaPaga());
+	}
+	
+	public Double taxaPaga(){
+		
 		double resultado;
 		
 		if (funcionarios>10){
@@ -23,11 +32,5 @@ public class PessoaJuridica extends Pessoa {
 		}
 		
 		return resultado;
-	}
-	
-	@Override
-	public String imposto(){
-		
-		return getNome()+": $ "+String.format("%.2f",impostoGerado());
 	}
 }
