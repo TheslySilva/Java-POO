@@ -11,6 +11,7 @@ public class Main {
 		Scanner sc = new Scanner(System.in);
 		
 		try {
+			
 			//Dadoa do Titular
 			System.out.println("Entre com os dados da conta:");
 			
@@ -41,7 +42,6 @@ public class Main {
 		} catch (SaqueException e) {
 			
 			System.out.println("\nErro ao realizar saque: " + e.getMessage());
-			
 		}
 	}
 }
