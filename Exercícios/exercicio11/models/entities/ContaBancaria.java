@@ -25,4 +25,13 @@ public class ContaBancaria {
 	public String getDono(){
 		return this.dono;
 	}
+	public Double getSaldo(){
+		return this.saldo:
+	}
+	public Double getLimiteDeSaque(){
+		return this.limiteDeSaque;
+	}
+	//
+	//Metodos personalizados
+	//
 }
