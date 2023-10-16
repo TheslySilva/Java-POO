@@ -6,9 +6,8 @@ public class ContaBancaria {
 	private Double saldo;
 	private Double limiteDeSaque;
 	
-	//
 	//Construtor
-	//
+	
 	public ContaBancaria (Integer numero, String dono, Double saldo, Double limiteDeSaque) {
 		
 		this.numero = numero;
@@ -16,9 +15,9 @@ public class ContaBancaria {
 		this.saldo = saldo;
 		this.limiteDeSaque = limiteDeSaque;
 	}
-	//
+	
 	//Gets e Sets
-	//
+	
 	public Integer getNumero(){
 		return this.numero;
 	}
@@ -31,7 +30,14 @@ public class ContaBancaria {
 	public Double getLimiteDeSaque(){
 		return this.limiteDeSaque;
 	}
-	//
+	
 	//Metodos personalizados
-	//
+	
+	public void deposito(Double depositar){
+		this.saldo+=depositar;
+	}
+	public void saque(Double saque){
+		this.saldo-=saque;
+	}
+	
 }
