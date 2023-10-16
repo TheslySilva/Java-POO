@@ -12,7 +12,7 @@ public class Main {
 		
 		System.out.println("Entre com os dados da conta:");
 		
-		System.out.print("Numero da conta: ");
+		System.out.print("\nNumero da conta: ");
 		int numero= sc.nextInt();
 		
 		sc.nextLine();
@@ -30,6 +30,9 @@ public class Main {
 		
 		//Saques e Depositos
 		
+		System.out.print("\nEntre com o valor do saque: ");
+		p1.saque(sc.nextDouble());
 		
+		System.out.println();
 	}
 }
