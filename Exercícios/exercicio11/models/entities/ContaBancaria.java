@@ -9,6 +9,19 @@ public class ContaBancaria {
 	//
 	//Construtor
 	//
-	public ContaBancaria(){
+	public ContaBancaria(
+		
+	Integer numero,
+	String dono,
+	Double saldo, 
+	Double limiteDeSaque
+	
+	){
+		
+		this.numero=numero;
+		this.dono=dono;
+		this.saldo=saldo;
+		this.limiteDeSaque=limiteDeSaque;
+		
 	}
 }
