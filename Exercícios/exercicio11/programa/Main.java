@@ -31,7 +31,7 @@ public class Main {
 			
 			ContaBancaria pessoa1 = new ContaBancaria(numero, titular, saldo, limiteDeSaque);
 			
-			//Saques e Depositos
+			//Saques
 			System.out.print("\nEntre com o valor do saque: ");
 			double saque = sc.nextDouble();
 			
