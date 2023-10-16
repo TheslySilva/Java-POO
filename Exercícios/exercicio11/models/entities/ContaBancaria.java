@@ -33,11 +33,11 @@ public class ContaBancaria {
 	
 	//Metodos personalizados
 	
-	public void deposito(Double depositar){
-		this.saldo+=depositar;
+	public void deposito throws (Double valor){
+		this.saldo+= valor;
 	}
-	public void saque(Double saque){
-		this.saldo-=saque;
+	public void saque(Double valor){
+		this.saldo-= valor;
 	}
 	
 }
