@@ -29,7 +29,14 @@ public class Main {
 			System.out.print("Limite de saque: ");
 			double limiteDeSaque = sc.nextDouble();
 			
-			ContaBancaria pessoa1 = new ContaBancaria(numero, titular, saldo, limiteDeSaque);
+			ContaBancaria pessoa1 = new ContaBancaria(
+				
+				numero, 
+				titular,
+				saldo, 
+				limiteDeSaque
+				
+				);
 			
 			//Saques
 			System.out.print("\nEntre com o valor do saque: ");
