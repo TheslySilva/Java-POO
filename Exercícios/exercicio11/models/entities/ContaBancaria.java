@@ -2,16 +2,16 @@ package exercicio11.models.entities;
 
 public class ContaBancaria {
 	private Integer numero;
-	private String dono;
+	private String titular;
 	private Double saldo;
 	private Double limiteDeSaque;
 	
 	//Construtor
 	
-	public ContaBancaria (Integer numero, String dono, Double saldo, Double limiteDeSaque) {
+	public ContaBancaria (Integer numero, String titular, Double saldo, Double limiteDeSaque) {
 		
 		this.numero = numero;
-		this.dono = dono;
+		this.titular = titular;
 		this.saldo = saldo;
 		this.limiteDeSaque = limiteDeSaque;
 	}
@@ -21,8 +21,8 @@ public class ContaBancaria {
 	public Integer getNumero(){
 		return this.numero;
 	}
-	public String getDono(){
-		return this.dono;
+	public String gettitular(){
+		return this.titular;
 	}
 	public Double getSaldo(){
 		return this.saldo:
